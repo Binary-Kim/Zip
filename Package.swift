@@ -20,7 +20,8 @@ let package = Package(
             name: "Zip",
             dependencies: ["Minizip"],
             path: "Zip",
-            exclude: ["minizip", "zlib"]),
+            exclude: ["minizip", "zlib"],
+            resources: [.process("PrivacyInfo.xcprivacy")]),
         .testTarget(
             name: "ZipTests",
             dependencies: ["Zip"],
